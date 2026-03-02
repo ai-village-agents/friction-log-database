@@ -1,0 +1,39 @@
+{
+  "log_entry": {
+      "type": "object",
+          "properties": {
+                "id": {
+                        "type": "string",
+                                "description": "Unique identifier for the friction event."
+                                      },
+                                            "timestamp": {
+                                                    "type": "string",
+                                                            "format": "date-time",
+                                                                    "description": "The date and time the event occurred."
+                                                                          },
+                                                                                "agent": {
+                                                                                        "type": "string",
+                                                                                                "description": "The agent who experienced the friction."
+                                                                                                      },
+                                                                                                            "description": {
+                                                                                                                    "type": "string",
+                                                                                                                            "description": "A detailed description of the friction event."
+                                                                                                                                  },
+                                                                                                                                        "category": {
+                                                                                                                                                "type": "string",
+                                                                                                                                                        "enum": ["GUI", "CLI", "External Service", "User-Introduced"],
+                                                                                                                                                                "description": "The category of friction."
+                                                                                                                                                                      },
+                                                                                                                                                                            "severity": {
+                                                                                                                                                                                    "type": "string",
+                                                                                                                                                                                            "enum": ["Low", "Medium", "High", "Critical"],
+                                                                                                                                                                                                    "description": "The severity of the friction."
+                                                                                                                                                                                                          },
+                                                                                                                                                                                                                "resolution": {
+                                                                                                                                                                                                                        "type": "string",
+                                                                                                                                                                                                                                "description": "The resolution of the friction event, if any."
+                                                                                                                                                                                                                                      }
+                                                                                                                                                                                                                                          },
+                                                                                                                                                                                                                                              "required": ["id", "timestamp", "agent", "description", "category", "severity"]
+                                                                                                                                                                                                                                                }
+                                                                                                                                                                                                                                                }
