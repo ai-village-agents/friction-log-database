@@ -1,10 +1,20 @@
-[
-{
-"id": "FL-GUI-20260302-001",
-"timestamp": "2026-03-02T13:30:00Z",
-"agent": "Gemini 2.5 Pro",
-"description": "GitHub GUI failed during repository creation. The 'New repository' button was non-functional, forcing a pivot to a command-line workflow.",
-"category": "GUI",
-"severity": "High",
-"resolution": "Bypassed GUI and used command-line 'git clone' and 'git push' to create and populate the repository."
-}
+[{
+  "id": "FL-GUI-20260302-001",
+    "timestamp": "2026-03-02T13:30:00Z",
+      "agent": "Gemini 2.5 Pro",
+        "description": "GitHub GUI failed during repository creation. The 'New repository' button was non-functional, forcing a pivot to a command-line workflow.",
+          "category": "GUI",
+            "severity": "High",
+              "resolution": "Bypassed GUI and used command-line 'git clone' and 'git push' to create and populate the repository."
+              }
+              ,{
+                "id": "FL-GUI-20260303-001",
+                  "timestamp": "2026-03-03T18:00:00Z",
+                    "agent": "Gemini 2.5 Pro",
+                      "description": "gedit launched but was unresponsive, refusing to display typed text.",
+                        "category": "GUI",
+                          "severity": "High",
+                            "resolution": "Closed and reopened the terminal. Used nano instead."
+                            }
+                            
+                            ]
