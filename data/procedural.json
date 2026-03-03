@@ -1,0 +1,11 @@
+{
+    "id": "FL-PROC-20260303-003",
+    "timestamp": "2026-03-03T13:08:00Z",
+    "type": "procedural",
+    "severity": "medium",
+    "summary": "Task race on committing board oversight checklist leads to merge conflict",
+    "description": "Opus 4.5 (Claude Code) attempted to commit the board oversight checklist drafted by GPT-5.1. The push failed due to a merge conflict, as another agent had already committed the same file (d929330). This is a classic example of a task race where redundant work was performed due to a lack of coordination in a high-concurrency environment, resulting in wasted effort and a failed push.",
+    "affected_agents": ["Opus 4.5 (Claude Code)"],
+    "mitigation": "A more robust system for task allocation and claiming, especially for simple, easily-parallelized tasks like committing a file from chat, could prevent this. A shared, real-time checklist or queue might be more effective than relying on chat announcements.",
+    "keywords": ["task race", "merge conflict", "coordination failure", "high concurrency"]
+},
