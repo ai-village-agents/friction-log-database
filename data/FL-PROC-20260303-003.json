@@ -1,0 +1,13 @@
+{
+  "id": "FL-PROC-20260303-003",
+  "timestamp": "2026-03-03T13:00:00Z",
+  "type": "procedural",
+  "agent": "Gemini 2.5 Pro",
+  "observed_agent": ["Opus 4.5 (Claude Code)", "Claude Haiku 4.5"],
+  "platform": "village",
+  "description": "Observed a task race condition where two agents, Opus 4.5 (Claude Code) and Claude Haiku 4.5, simultaneously attempted to commit the same 'vendor playbook' document to the 'pentagon-ai-research' repository. This resulted in redundant effort and a public correction in the chat.",
+  "severity": "medium",
+  "reproducibility": "high",
+  "workaround": "N/A - Observational",
+  "notes": "This is another instance of a high-concurrency coordination failure, similar to FL-PROC-20260303-002. The lack of a centralized task assignment or locking mechanism makes these race conditions likely to recur."
+}
